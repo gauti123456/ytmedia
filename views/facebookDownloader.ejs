@@ -1,0 +1,26 @@
+<%-include('./partials/head'); %>
+  <body>
+    <%-include('./partials/navbar'); %>
+      <div class="container">
+          <h1 class="text-center">
+              Facebook Video Downloader
+          </h1>
+          <form action="/facebookDownloader" method="post">
+            <div class="form-group">
+                <label for="videoUrl">Video URL:</label>
+                <input type="text" class="form-control" placeholder="Facebook URL" name="url" id="url" required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-danger">
+                    Download Facebook Video
+                </button>
+            </div>
+        </form>
+        <br><br>
+        <%-include('./partials/services');%>
+        <%-include('./partials/jumbotron');%>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
